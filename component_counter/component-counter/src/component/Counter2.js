@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 
-function Counter2(){
+export default function Counter2(){
     const [count,setCount] = useState(0);
     
     return(
@@ -16,4 +16,3 @@ function Counter2(){
     )
     
 }
-export default Counter2;
