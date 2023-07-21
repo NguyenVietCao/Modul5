@@ -9,17 +9,17 @@ function Medical() {
         <h1>Tờ khai y tế</h1>
       <Formik initialValues={{ hoTen: '', hoChieu: '', namSinh: '', gioiTinh: '', quocTich: '', congTy: '', boPhan: '', coTheBaoHiem: '', tinh: '', huyen: '', xa: '', toDanPho: '', dienThoai: '', email: '' }}
         validationSchema={yup.object({
-          hoTen: yup.string().required(),
-          hoChieu: yup.string().required(),
-          namSinh: yup.number().min(1900).required(),
+          hoTen: yup.string().required('You must be fill in this field'),
+          hoChieu: yup.string().required('You must be fill in this field'),
+          namSinh: yup.number().min(1900).required('You must be fill in this field'),
           // gioiTinh: yup.string().required(),
-          quocTich: yup.string().required(),
-          tinh: yup.string().required(),
-          huyen: yup.string().required(),
-          xa: yup.string().required(),
-          toDanPho:yup.string().required(),
-          dienThoai: yup.string().required(),
-          email: yup.string().required().matches('\\^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$','Invalid email address'),
+          quocTich: yup.string().required('You must be fill in this field'),
+          tinh: yup.string().required('You must be fill in this field'),
+          huyen: yup.string().required('You must be fill in this field'),
+          xa: yup.string().required('You must be fill in this field'),
+          toDanPho:yup.string().required('You must be fill in this field'),
+          dienThoai: yup.string().required('You must be fill in this field'),
+          email: yup.string().required('You must be fill in this field').matches('\\^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$','Invalid email address'),
         })}
       >
         <Form>
