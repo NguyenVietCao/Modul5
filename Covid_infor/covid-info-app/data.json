@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "Date": "22/12/2023",
+      "Confirmed": "12",
+      "Active": "15",
+      "Recovered": "17",
+      "Deaths": "19"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
